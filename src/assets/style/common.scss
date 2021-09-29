@@ -15,11 +15,16 @@ body {
 }
 
 // LINK
-a {
+@mixin reset-tag-a {
     text-decoration: none;
 }
 
 // LISTE
-li {
+@mixin reset-list {
     list-style: none;
+}
+
+@mixin misura-container {
+    width: 992px;
+    margin: 0 auto;
 }

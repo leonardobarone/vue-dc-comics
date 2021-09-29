@@ -7,7 +7,7 @@
       <nav>
         <ul>
           <li v-for="(link, index) in links" :key="index">
-            <a :href="link.connection">
+            <a :class="link.state == true ? 'active' : null" :href="link.connection">
               {{ link.text.toUpperCase() }}
             </a>
           </li>
@@ -28,7 +28,7 @@ export default {
       links: [
         {
           "text": "characters",
-          "state": false,
+          "state": true,
           "connection": "#"
         },
         {
@@ -85,11 +85,11 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
 
-@import '@/assets/style/bootstrap.scss';
+@import '@/assets/style/common.scss';
 @import '@/assets/style/variables.scss';
   
   .container {
-    border: 1px solid black;
+    @include misura-container;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -101,17 +101,34 @@ export default {
 
     ul {
       display: flex;
+        li {
+          @include reset-list;
+        }
     }
 
     a {
-      color: $text-header;
+      @include reset-tag-a;
+      color: $main-color;
       font-weight: bold;
-      margin-left: 10px;
+      margin-left: .625rem;
       display: inline-block;
       height: 4.125rem;
       line-height: 4.125rem;
+
+      // &:hover {
+      //   color: $accent-color;
+      // }
+
+      // &:focus {
+      //   border-bottom: .1875rem solid $accent-color;
+      // }
+
+      &.active {
+        border-bottom: .1875rem solid $accent-color;
+      }
+
     }
-  
+
   }
 
 

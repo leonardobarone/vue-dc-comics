@@ -1,12 +1,12 @@
 <template>
-  <footer>
-    <h1>FOoter</h1>
-  </footer>
+  <div class="footer-top">
+    <h1>FooterTop</h1>
+  </div>
 </template>
 
 <script>
 export default {
-  name: 'Footer',
+  name: 'FooterTop',
   props: {
     msg: String
   }
