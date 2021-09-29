@@ -1,0 +1,25 @@
+// IMPORT
+@import 'variables.scss';
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap');
+
+// RESET
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+// FONT
+body {
+    font-family: 'PT Sans Narrow', sans-serif;
+}
+
+// LINK
+a {
+    text-decoration: none;
+}
+
+// LISTE
+li {
+    list-style: none;
+}
