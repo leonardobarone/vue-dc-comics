@@ -28,3 +28,9 @@ body {
     width: 992px;
     margin: 0 auto;
 }
+
+@mixin bg-custom {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+}

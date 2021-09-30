@@ -5,8 +5,13 @@
                 <img :src="eroe.thumb" alt="">
                 <h5>{{eroe.series.toUpperCase()}}</h5>
             </div>
-            
-
+        </div>
+        <div class="container-2">
+            <div class="button">
+                <a href="#">
+                    LOAD MORE
+                </a>
+            </div>
         </div>
     </div>
 </template>
@@ -109,7 +114,7 @@ export default {
 }
 
 .container {
-    padding: 2.5rem 0rem;
+    padding: 3.5rem 0rem;
     @include misura-container;
     color: white;
     display: flex;
@@ -128,6 +133,23 @@ export default {
              margin-top: .3125rem ;
          }
      }
+}
+
+.container-2 {
+    @include misura-container;
+    text-align: center;
+    padding: 10px;
+    .button { 
+        margin-bottom: 2.5rem;
+        a {
+        font-weight: bold;
+        padding: 7px 23px;
+        background-color: $accent-color;
+        @include reset-tag-a;
+        color: white;
+    }
+
+}
 }
 
 

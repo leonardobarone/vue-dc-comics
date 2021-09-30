@@ -1,6 +1,7 @@
 <template>
   <div id="app">
     <Header />
+    <Hero />
     <SectionBlack />
     <SectionBlue />
     <footer>
@@ -16,13 +17,15 @@ import SectionBlue from './components/SectionBlue.vue'
 import FooterTop from './components/FooterTop.vue'
 import FooterBottom from './components/FooterBottom.vue'
 import SectionBlack from './components/SectionBlack.vue'
+import Hero from './components/Hero.vue'
 
 export default {
   name: 'App',
   components: {
     Header,
-    SectionBlack,
+    Hero,
     SectionBlue,
+    SectionBlack,
     FooterTop,
     FooterBottom
   },
