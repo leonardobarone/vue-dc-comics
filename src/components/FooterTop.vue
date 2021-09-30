@@ -80,13 +80,16 @@ export default {
 .left {
   display: flex;
   width: 50%;
-  border: 1px solid white;
   color: white;
   padding: 40px 0px;
 }
 
 .left-1, .left-2, .left-3 {
   width: calc(100% / 3);
+}
+
+h4 {
+  margin: 10px 0px 5px 0px;
 }
 
 ul {
@@ -98,7 +101,6 @@ ul {
 
 .right {
   width: 50%;
-  border: 1px solid white;
   background-image: url("../assets/img/dc-logo-bg.png");
   background-size: 80%;
   background-repeat: no-repeat;
