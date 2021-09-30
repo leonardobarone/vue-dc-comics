@@ -1,10 +1,7 @@
 <template>
     <div class="container-fluid">
         <div class="container">
-            <div v-for="(eroe, index) in eroi" :key="index" class="eroe">
-                <img :src="eroe.thumb" alt="">
-                <h5>{{eroe.series.toUpperCase()}}</h5>
-            </div>
+            <Card :card="eroe" v-for="(eroe, index) in eroi" :key="index" />
         </div>
         <div class="container-2">
             <div class="button">
@@ -17,11 +14,13 @@
 </template>
 
 <script>
+import Card from '../components/Card.vue'
 export default {
   name: 'SectionBlack',
-  props: {
-    msg: String
+  components: {
+      Card,
   },
+  props: ['card'],
   data() {
       return {
           eroi: [
@@ -119,20 +118,7 @@ export default {
     color: white;
     display: flex;
     flex-wrap: wrap;
-     .eroe {
-         padding: .625rem;
-         width: calc(100% / 6);
-         img {
-             object-fit: cover;
-             object-position: top;
-             width: 9.375rem;
-             height: 9.375rem;
-         }
-         h5 {
-             color: white;
-             margin-top: .3125rem ;
-         }
-     }
+     
 }
 
 .container-2 {
