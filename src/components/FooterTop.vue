@@ -2,10 +2,52 @@
   <div class="container-fluid">
     <div class="footer-top container">
       <div class="left">
-
+        <div class="left-1">
+          <h4>DC COMICS</h4>
+          <ul>
+            <li>Characters</li>
+            <li>Comics</li>
+            <li>Movies</li>
+            <li>TV</li>
+            <li>Games</li>
+            <li>Videos</li>
+            <li>News</li>
+          </ul>
+          <h4>SHOP</h4>
+          <ul>
+            <li>Shop DC</li>
+            <li>Shop DC Collection</li>
+          </ul>
+        </div>
+        <div class="left-2">
+          <h4>DC</h4>
+          <ul>
+            <li>Terms Of Use</li>
+            <li>Privacy policy (New)</li>
+            <li>Ad Choices</li>
+            <li>Advertising</li>
+            <li>Jobs</li>
+            <li>Subscriptions</li>
+            <li>Talent Workshops</li>
+            <li>CPSC Certificates</li>
+            <li>Ratings</li>
+            <li>Shop Help</li>
+            <li>Contact Us</li>
+          </ul>
+        </div>
+        <div class="left-3">
+          <h4>SITES</h4>
+          <ul>
+            <li>DC</li>
+            <li>MAD Magazine</li>
+            <li>DC Kids</li>
+            <li>DC Universe</li>
+            <li>DC Power Visa</li>
+          </ul>  
+        </div>
       </div>
       <div class="right">
-        <!-- <img src="@/assets/img/dc-logo-bg.png" alt=""> -->
+       
       </div>
     </div>
   </div>
@@ -28,13 +70,39 @@ export default {
   background-image: url("../assets/img/footer-bg.jpg");
   background-position: center;
   background-repeat: no-repeat;
-  height: 200px;
+  .container {
+    @include misura-container;
+    height: 100%;
+    display: flex;
+  }
 }
 
-.container {
-  @include misura-container;
+.left {
+  display: flex;
+  width: 50%;
+  border: 1px solid white;
+  color: white;
+  padding: 40px 0px;
 }
-.left img {
-  width: 300px;
+
+.left-1, .left-2, .left-3 {
+  width: calc(100% / 3);
 }
+
+ul {
+  @include reset-list;
+  li {
+    color: gray;
+  }
+}
+
+.right {
+  width: 50%;
+  border: 1px solid white;
+  background-image: url("../assets/img/dc-logo-bg.png");
+  background-size: 80%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 </style>

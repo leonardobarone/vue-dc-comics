@@ -112,8 +112,8 @@ export default {
       font-weight: bold;
       margin-left: .625rem;
       display: inline-block;
-      height: 4.125rem;
-      line-height: 4.125rem;
+      height: 5.125rem;
+      line-height: 5.125rem;
 
       // &:hover {
       //   color: $accent-color;
