@@ -1,7 +1,7 @@
 <template>
     
             <div class="eroe">
-                <img :src="card.thumb" alt="">
+                <img :src="card.thumb" :alt="card.series">
                 <h5>{{card.series.toUpperCase()}}</h5>
             </div>
     

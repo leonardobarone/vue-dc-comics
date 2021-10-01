@@ -2,7 +2,7 @@
   <header>
     <div class="container">
       <div class="logo">
-        <img src="@/assets/img/dc-logo.png" alt="">
+        <img src="../assets/img/dc-logo.png" alt="">
       </div>
       <nav>
         <ul>
@@ -85,8 +85,8 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
 
-@import '@/assets/style/common.scss';
-@import '@/assets/style/variables.scss';
+@import '../assets/style/common.scss';
+@import '../assets/style/variables.scss';
   
   .container {
     @include misura-container;
