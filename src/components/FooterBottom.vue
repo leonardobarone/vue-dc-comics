@@ -15,27 +15,27 @@
         </li>
         <li>
           <a href="#">
-            <img src="@/assets/img/footer-facebook.png" alt="">
+            <img src="../assets/img/footer-facebook.png" alt="">
           </a>
         </li>
         <li>
           <a href="#">
-            <img src="@/assets/img/footer-periscope.png" alt="">
+            <img src="../assets/img/footer-periscope.png" alt="">
           </a>
         </li>
         <li>
           <a href="#">
-            <img src="@/assets/img/footer-pinterest.png" alt="">
+            <img src="../assets/img/footer-pinterest.png" alt="">
           </a>
         </li>
         <li>
           <a href="#">
-            <img src="@/assets/img/footer-twitter.png" alt="">
+            <img src="../assets/img/footer-twitter.png" alt="">
           </a>
         </li>
         <li>
           <a href="#">
-            <img src="@/assets/img/footer-youtube.png" alt="">
+            <img src="../assets/img/footer-youtube.png" alt="">
           </a>
         </li>
       </ul>
@@ -54,7 +54,7 @@ export default {
 </script>
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
-@import '@/assets/style/common.scss';
+@import '../assets/style/common.scss';
 
 .container-fluid {
   background-color: $main-color;

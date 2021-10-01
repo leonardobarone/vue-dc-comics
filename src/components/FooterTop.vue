@@ -64,7 +64,7 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
-@import '@/assets/style/common.scss';
+@import '../assets/style/common.scss';
 
 .container-fluid {
   background-image: url("../assets/img/footer-bg.jpg");
