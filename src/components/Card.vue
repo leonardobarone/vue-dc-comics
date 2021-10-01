@@ -10,7 +10,10 @@
 <script>
 export default {
   name: 'Card',
-  props: ['card']
+//   props: ['card']
+    props: {
+        card: Object
+    }
 }
 </script>
 

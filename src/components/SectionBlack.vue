@@ -1,6 +1,7 @@
 <template>
     <div class="container-fluid">
         <div class="container">
+            <a class="button" href="#">CURRENT SERIES</a>
             <Card :card="eroe" v-for="(eroe, index) in eroi" :key="index" />
         </div>
         <div class="container-2">
@@ -22,7 +23,8 @@ export default {
   components: {
       Card,
   },
-  props: ['card'],
+// SEMBREREBBE INUTILE
+// props: ['card'],
   data() {
       return {
           eroi: json
@@ -42,6 +44,7 @@ export default {
 }
 
 .container {
+    position: relative;
     padding: 3.5rem 0rem;
     @include misura-container;
     color: white;
@@ -65,6 +68,18 @@ export default {
     }
 
 }
+}
+
+
+a.button {
+    position: absolute;
+    top: -25px;
+    font-weight: bold;
+    @include reset-tag-a;
+    color: white;
+    font-size: 20px;
+    padding: 10px 15px;
+    background-color: $accent-color;
 }
 
 

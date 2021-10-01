@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <Header />
-    <Hero />
+    <Hero :imgHero="require('./assets/img/jumbotron.jpg')"/>
     <SectionBlack />
     <SectionBlue />
     <footer>

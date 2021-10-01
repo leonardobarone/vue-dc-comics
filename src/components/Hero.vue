@@ -1,7 +1,7 @@
 <template>
-    <div class="hero">
+    <div class="hero" :style="`background-image: url(${imgHero})`">
         <div class="container">
-            <a class="button" href="#">CURRENT SERIES</a>
+           
         </div>
     </div>
 </template>
@@ -10,7 +10,7 @@
 export default {
   name: 'Hero',
   props: {
-    msg: String
+    imgHero: String
   },
 }
 </script>
@@ -22,10 +22,8 @@ export default {
 @import '../assets/style/variables.scss';
 
 .hero {
-    position: relative;
     @include bg-custom;
     height: 300px;
-    background-image: url("../assets/img/jumbotron.jpg");
 }
 
 .container {
@@ -33,15 +31,5 @@ export default {
 }
 
 
-a.button {
-    position: absolute;
-    bottom: -20px;
-    font-weight: bold;
-    @include reset-tag-a;
-    color: white;
-    font-size: 20px;
-    padding: 10px 15px;
-    background-color: $accent-color;
-}
 
 </style>
